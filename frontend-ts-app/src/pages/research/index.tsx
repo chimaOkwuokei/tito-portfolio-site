@@ -1,7 +1,6 @@
 'use client'
 
 import { Card, CardContent } from "@/components/ui/card"
-import { BookOpen } from "lucide-react"
 
 export default function Research() {
   const research = [
@@ -70,7 +69,7 @@ export default function Research() {
                     )}
                   </div>
                   <div className="flex items-center gap-2 text-lg text-white font-medium">
-                    <BookOpen className="text-[#FFD700] w-5 h-5" />
+                    {/* <BookOpen className="text-[#FFD700] w-5 h-5" /> */}
                     <h3 className="text-lg font-medium">{pub.title}</h3>
                   </div>
                   <p className="text-lg text-white/70">{pub.description}</p>

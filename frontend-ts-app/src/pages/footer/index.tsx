@@ -15,7 +15,6 @@ export default function Footer() {
                     </h2>
                     <p className="mt-4 text-white/80">
                         Senior AI Engineer passionate about machine learning, and cutting-edge AI technologies.
-                        Based in London, UK.
                     </p>
                     <div className="flex gap-4 mt-6">
                         <a href="http://linkedin.com/in/tito-osadebe" aria-label="LinkedIn" className="bg-black/80 p-3 rounded-md hover:bg-[#FFD700]">
