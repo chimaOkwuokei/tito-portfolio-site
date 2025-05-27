@@ -4,16 +4,16 @@ import { About, Blog, Contact, Experience, Footer, Hero, Project, Research } fro
 function App() {
 
   return (
-    <>
-      <Hero/>
-      <About/>
-      <Experience/>
-      <Project/>
-      <Research/>
-      <Blog/>
-      <Contact/>
-      <Footer/>
-    </>
+    <div className="flex flex-col min-h-screen overflow-x-hidden bg-black">
+      <Hero />
+      <About />
+      <Experience />
+      <Project />
+      <Research />
+      <Blog />
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 

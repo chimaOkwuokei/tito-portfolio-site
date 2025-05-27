@@ -16,8 +16,8 @@ export default function AboutSection() {
   ]
 
   return (
-    <div className="bg-gradient-to-r from-black to-black/80">
-      <section id="about" className="py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]">
+    <div>
+      <section id="about" className="min-h-screen py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Image */}
           <div className="w-full lg:w-1/2 flex justify-center">

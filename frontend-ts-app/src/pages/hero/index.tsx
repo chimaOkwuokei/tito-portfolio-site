@@ -14,7 +14,7 @@ export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black to-black/80 text-white relative">
+    <div className="min-h-screen text-white relative">
 
       {/* Navbar */}
       <nav className="fixed top-0 w-full backdrop-blur z-50 py-4">
@@ -64,7 +64,7 @@ export default function HeroSection() {
       {/* hero section */}
       <section
         id="home"
-        className="pt-36 px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-screen-xl mx-auto"
+        className="min-h-screen pt-36 px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-screen-xl mx-auto"
       >
         {/* Left Side - Text */}
         <div className="w-full lg:w-[45%] max-w-2xl">

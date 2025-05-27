@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 export default function Footer() {
     return (
-        <div className="border-t border-white/10 bg-gradient-to-r from-black to-black/80 text-white py-12 px-6">
+        <div className="border-t border-white/10 text-white py-12 px-6">
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
                 {/* Left Section */}
                 <div>

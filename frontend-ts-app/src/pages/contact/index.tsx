@@ -5,10 +5,10 @@ import { Mail, Linkedin, MapPin } from "lucide-react"
 
 export default function Contact() {
   return (
-    <div className="bg-gradient-to-r from-black to-black/80">
+    <div>
       <section
         id="contact"
-        className="py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]"
+        className="min-h-screen py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]"
       >
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#ecb80d] mb-4">
@@ -77,7 +77,7 @@ export default function Contact() {
           <div className="flex justify-center gap-4 flex-wrap pt-4">
             <a
               href="mailto:osadebe.tito@gmail.com"
-              className="px-6 py-2 bg-gradient-to-r from-[#FFD700] to-[#cfcdc2] text-white font-medium rounded-full hover:brightness-110 transition-transform hover:scale-[1.01] hover:shadow-lg"
+              className="px-6 py-2 bg-gradient-to-r from-[#FFD700] to-[#f0cf10] text-white font-medium rounded-full hover:brightness-110 transition-transform hover:scale-[1.01] hover:shadow-lg"
             >
               Send Email
             </a>

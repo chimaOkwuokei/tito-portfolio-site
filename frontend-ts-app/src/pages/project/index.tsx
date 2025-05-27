@@ -19,10 +19,10 @@ export default function Project() {
   ]
 
   return (
-    <div className="bg-gradient-to-r from-black to-black/80">
+    <div>
       <section
         id="projects"
-        className="py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]"
+        className="min-h-screen py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]"
       >
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#ecb80d] mb-6 leading-tight">
