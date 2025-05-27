@@ -3,9 +3,9 @@
 import { Card, CardContent } from "@/components/ui/card"
 
 const platformIcons: Record<string, string> = {
-  "MLS Future Forum": "/src/assets/mls.png",
-  "LinkedIn": "/src/assets/linkedin.svg",
-  "Dev.to": "/src/assets/dev.png"
+  "MLS Future Forum": "/mls.png",
+  "LinkedIn": "/linkedin.svg",
+  "Dev.to": "/dev.png"
 }
 
 export default function Blog() {
