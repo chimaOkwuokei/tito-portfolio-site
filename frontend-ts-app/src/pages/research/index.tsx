@@ -7,7 +7,7 @@ export default function Research() {
     {
       title: "Forensic Handwritten Document Analysis",
       description:
-        "Ongoing study using computer vision and machine learning to analyze handwriting, detect forgeries, and support legal/forensic investigations in Nigeria.",
+        "Ongoing study using computer vision and machine learning to analyze handwriting, identify writers and support legal/forensic investigations.",
       ongoing: true,
     },
     {

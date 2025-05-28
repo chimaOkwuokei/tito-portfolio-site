@@ -23,7 +23,7 @@ export default function Blog() {
     {
       platform: "LinkedIn",
       year: "2025",
-      readTime: "3 min listen",
+      readTime: "9 min listen",
       title: "BBC Radio Interview: Diversity in AI",
       description: "Tito Osadebey joins BBC Radio to discuss the need for inclusive data and diverse representation in AI development.",
       tags: ["AI", "Diversity", "Ethics", "Media"],

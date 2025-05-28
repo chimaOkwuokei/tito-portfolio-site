@@ -31,7 +31,7 @@ export default function AboutSection() {
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#ecb80d] mb-6">
-              About Me
+              About
             </h2>
 
             <p className="mb-4 md:text-lg">
