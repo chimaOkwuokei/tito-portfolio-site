@@ -9,8 +9,7 @@ import igbLogo from '@/assets/igbinedion.png';
 
 export default function AboutSection() {
   const skills = [
-    "Linux", "Windows", "C",
-    "Python", "HTML", "CSS", "MySQL", "PostgreSQL", "MongoDB", "Terraform", "Ansible", "Docker", "Git",
+    "Python", "LnagChain", "LangGraph", "HuggingFace", "MySQL", "PostgreSQL", "MongoDB", "Terraform", "Ansible", "Docker", "Git",
     "DVC", "MLflow", "Databricks", "Scikit - Learn", "PyTorch", "Tensorflow", "OpenCV", "Apache Spark", "Hadoop", "Databricks",
     "Flask", "FastAPI", "AWS"
   ]
@@ -18,17 +17,16 @@ export default function AboutSection() {
   return (
     <div>
       <section id="about" className="min-h-screen py-24 px-6 max-w-screen-xl mx-auto text-[#C0C0C0]">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-stretch gap-12">
           {/* Image */}
-          <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-full lg:w-1/2 flex justify-center items-stretch">
             <img
               src={aboutImage}
               alt="Presenting"
-              width={500}
-              height={800}
-              className="rounded-xl shadow-lg object-cover max-h-[800px] w-auto"
+              className="rounded-xl shadow-lg object-cover h-full w-full"
             />
           </div>
+
 
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
@@ -37,15 +35,17 @@ export default function AboutSection() {
             </h2>
 
             <p className="mb-4 md:text-lg">
-              Passionate AI Engineer with 3+ years of experience in AI Engineering and Software Developemnt, specializing in Machine Learning, Computer Vision, NLP and working with AWS.
-              I specialize in building scalable AI solutions for global institutions, open-source initiatives, and industrial applications.
+              Tito Osadebey is an AI Engineer specialising in inclusive machine learning, GenAI applications, and ethical AI system design. His work focuses on building intelligent solutions that are not only accurate, but culturally aware and globally relevant.
+              open-source initiatives, and industrial applications.
             </p>
-            {/* <p className="mb-4">
-              After finishing my bachelor’s degree, I chose to pursue a career in artificial intelligence, so I enrolled in an MSc program at City University of London...
+            <p className="mb-4 md:text-lg">
+              Currently based in the UK, Tito has led and contributed to projects ranging from developing bias-aware image recognition models,
+              to designing LLM-powered forecasting tools and deploying computer vision workflows on HPC systems for healthcare research. He combines technical expertise with human-centred design to ensure the AI systems
+              he builds reflect the diversity of the real world.
             </p>
-            <p className="mb-6">
-              What makes me unique as an AI engineer is my love to explore new stuff, in other words, my curiosity to learn how things work under the hood...
-            </p> */}
+            <p className="mb-6 md:text-lg">
+              His work has been featured on BBC Radio and in The Voice Newspaper UK, where he shared insights on AI inclusivity and the need for representative data in model training. He has also been invited to speak at conferences, universities and industry events.
+            </p>
 
             {/* Skills */}
             <h3 className="text-xl font-semibold mb-4 text-white">Skills & Technologies</h3>

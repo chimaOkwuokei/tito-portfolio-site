@@ -13,9 +13,9 @@ export default function Footer() {
                     <h2 className="text-2xl font-bold bg-gradient-to-r from-[#FFD700] to-[#FFFFFF] bg-clip-text text-transparent">
                         Tito Osadebey
                     </h2>
-                    <p className="mt-4 text-white/80">
+                    {/* <p className="mt-4 text-white/80">
                         Senior AI Engineer passionate about machine learning, and cutting-edge AI technologies.
-                    </p>
+                    </p> */}
                     <div className="flex gap-4 mt-6">
                         <a href="http://linkedin.com/in/tito-osadebe" aria-label="LinkedIn" className="bg-black/80 p-3 rounded-md hover:bg-[#FFD700]">
                             <FaLinkedin size={20} />

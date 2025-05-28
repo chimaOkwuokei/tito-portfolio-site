@@ -5,18 +5,18 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Research() {
   const research = [
     {
-      title:
-        "Addressing AI Bias Through Inclusivity: A Case Study on Nigerian Food Images",
-      description:
-        "This research explores how diverse, culturally representative datasets can reduce AI bias in image recognition tasks, improving model fairness and inclusivity.",
-      ongoing: false,
-    },
-    {
       title: "Forensic Handwritten Document Analysis",
       description:
         "Ongoing study using computer vision and machine learning to analyze handwriting, detect forgeries, and support legal/forensic investigations in Nigeria.",
       ongoing: true,
     },
+    {
+      title:
+        "Addressing AI Bias Through Inclusivity: A Case Study on Nigerian Food Images",
+      description:
+        "This research explores how diverse, culturally representative datasets can reduce AI bias in image recognition tasks, improving model fairness and inclusivity.",
+      ongoing: false,
+    }
     // {
     //   organization: "Firemind",
     //   title:

@@ -114,6 +114,17 @@ export default function HeroSection() {
           />
         </div>
       </section>
+      {/* Featured On Section */}
+      <div className="w-full flex justify-center mt-12">
+        <div className="bg-black text-[#FFD700] border-1 border-[#FFD700] rounded-3xl shadow-lg px-6 py-4 max-w-5xl w-full">
+          <p className="text-center font-semibold text-2xl mb-4">Featured On</p>
+          <div className="flex flex-wrap justify-center gap-20 items-center">
+            <img src="thevoice.png" alt="The Voice" className="h-12 md:h-16"/>
+            <img src="bbc.png" alt="BBC" className="h-12 md:h-16"/>
+            <img src="mlsff.png" alt="MLSFF" className="h-12 md:h-16"/>
+          </div>
+        </div>
+      </div>
 
     </div>
   );

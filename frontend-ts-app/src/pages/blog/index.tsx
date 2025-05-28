@@ -17,7 +17,8 @@ export default function Blog() {
       title: "How I Went from Confused to Confident: My Simple System for Reading Research Papers",
       description: "A practical guide to help beginners build confidence and skill in reading academic AI/ML research papers.",
       tags: ["Learning", "Research", "Productivity"],
-      link: "https://www.linkedin.com/pulse/how-i-went-from-confused-confident-my-simple-system-reading-osadebey-wnhjf"
+      link: "https://www.linkedin.com/pulse/how-i-went-from-confused-confident-my-simple-system-reading-osadebey-wnhjf",
+      isAudio: false
     },
     {
       platform: "LinkedIn",
@@ -26,7 +27,8 @@ export default function Blog() {
       title: "BBC Radio Interview: Diversity in AI",
       description: "Tito Osadebey joins BBC Radio to discuss the need for inclusive data and diverse representation in AI development.",
       tags: ["AI", "Diversity", "Ethics", "Media"],
-      link: "https://www.linkedin.com/posts/tito-osadebe_artificialintelligence-ai-diversity-activity-7299710914944000000-4Ukc"
+      isAudio: true,
+      audioSrc: "/bbc-interview.mp3" // Place this file in your `public/` folder
     },
     {
       platform: "MLS Future Forum",
@@ -35,7 +37,8 @@ export default function Blog() {
       title: "AI Systems Coming Up With Biased Results Due to the Datasets They Are Trained On",
       description: "An article discussing the inherent bias in AI systems caused by non-inclusive datasets, highlighting the importance of ethical data practices.",
       tags: ["AI Ethics", "Bias", "Data", "Inclusion"],
-      link: "https://mlsfutureforum.com/resource/ai-systems-coming-up-with-biased-results-due-to-the-datasets-they-are-trained-on.html?_gl=1*phw2vj*_up*MQ.._ga*NTU4MDQzMDUyLjE3Mzk5NjY1MDc._ga_YVRMR58JHV*MTczOTk2NjUwNy4xLjEuMTczOTk2OTExMi4wLjAuMA"
+      link: "https://mlsfutureforum.com/resource/ai-systems-coming-up-with-biased-results-due-to-the-datasets-they-are-trained-on.html?_gl=1*phw2vj*_up*MQ.._ga*NTU4MDQzMDUyLjE3Mzk5NjY1MDc._ga_YVRMR58JHV*MTczOTk2NjUwNy4xLjEuMTczOTk2OTExMi4wLjAuMA",
+      isAudio: false
     },
     {
       platform: "LinkedIn",
@@ -44,7 +47,8 @@ export default function Blog() {
       title: "The Ideal Way to Setup Machine Learning Projects",
       description: "A structured approach to organizing and managing machine learning projects for clarity and reproducibility.",
       tags: ["ML Engineering", "Workflow", "Best Practices"],
-      link: "https://www.linkedin.com/pulse/ideal-way-setup-machine-learning-projects-tito-osadebey-4i1zf"
+      link: "https://www.linkedin.com/pulse/ideal-way-setup-machine-learning-projects-tito-osadebey-4i1zf",
+      isAudio: false
     },
     {
       platform: "Dev.to",
@@ -53,7 +57,8 @@ export default function Blog() {
       title: "The Graph Analytics Revolution: Understanding the Dynamic Tool Driving Modern Technology",
       description: "An overview of graph analytics, how it works, and its impact across industries like finance, cybersecurity, and healthcare.",
       tags: ["Graph Analytics", "Data Science", "Tech Trends"],
-      link: "https://dev.to/titoausten/the-graph-analytics-revolution-understanding-the-dynamic-tool-driving-modern-technology-5ff9"
+      link: "https://dev.to/titoausten/the-graph-analytics-revolution-understanding-the-dynamic-tool-driving-modern-technology-5ff9",
+      isAudio: false
     }
   ]
 
@@ -69,14 +74,8 @@ export default function Blog() {
           </h2>
         </div>
         <div className="grid gap-4 lg:grid-cols-2">
-          {blogPosts.map((post, index) => (
-            <a
-              key={index}
-              href={post.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-full"
-            >
+          {blogPosts.map((post, index) => {
+            const content = (
               <Card className="h-full flex flex-col justify-between bg-white/5 border border-white/10 backdrop-blur-md transition-transform hover:scale-[1.01] hover:shadow-lg hover:border-[#FFD700] cursor-pointer">
                 <CardContent className="p-6 flex flex-col justify-between h-full space-y-4">
                   <div className="text-sm text-white/60 flex items-center gap-2">
@@ -101,10 +100,33 @@ export default function Blog() {
                       </span>
                     ))}
                   </div>
+                  {post.isAudio && post.audioSrc && (
+                    <audio controls className="mt-4 w-full">
+                      <source src={post.audioSrc} type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  )}
                 </CardContent>
               </Card>
-            </a>
-          ))}
+            )
+
+            // If it's not audio, wrap it in a link
+            return post.isAudio ? (
+              <div key={index} className="h-full">
+                {content}
+              </div>
+            ) : (
+              <a
+                key={index}
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-full"
+              >
+                {content}
+              </a>
+            )
+          })}
         </div>
       </section>
     </div>

@@ -12,7 +12,7 @@ export default function Project() {
     },
     {
       title: "Medical Insurance Prediction System",
-      link: "https://github.com/titoausten/medical-insurance-charges-prediction/",
+      // link: "https://github.com/titoausten/medical-insurance-charges-prediction/",
       description:
         "Built and deployed a web-based machine learning model to predict medical insurance costs with visual insights, improving risk assessment and pricing strategies for insurers."
     }
@@ -33,11 +33,11 @@ export default function Project() {
         <div className="space-y-5">
           {projects.map((project, index) => (
             <div key={index}>
-              <a
+              {/* <a
                 href={project.link}
                 target={project.link ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-              >
+              > */}
                 <Card className="bg-white/5 border border-white/10 backdrop-blur-md relative overflow-hidden transition-transform hover:scale-[1.01] hover:shadow-lg hover:border-[#FFD700] cursor-pointer">
                   <CardContent className="p-6 space-y-2">
                     <div className="flex items-center gap-2 text-lg text-white font-medium">
@@ -51,7 +51,7 @@ export default function Project() {
                     </p>
                   </CardContent>
                 </Card>
-              </a>
+              {/* </a> */}
             </div>
           ))}
         </div>
