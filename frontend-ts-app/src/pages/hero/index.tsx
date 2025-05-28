@@ -75,7 +75,7 @@ export default function HeroSection() {
           <h2 className="text-xl md:text-2xl text-[#C0C0C0] mt-2">AI Engineer</h2>
 
           <p className="text-white/80 mt-4 text-base md:text-lg">
-            Passionate AI Engineer with 3+ years of experience in AI Engineering and Software Developemnt, specializing in Machine Learning, Computer Vision, NLP and working with AWS. I specialize in building scalable AI solutions for global institutions, open-source initiatives, and industrial applications.
+            I specialize in building scalable AI solutions for global institutions, open-source initiatives, and industrial applications.
           </p>
 
           {/* Buttons */}
