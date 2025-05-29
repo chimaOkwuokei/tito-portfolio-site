@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 const platformIcons: Record<string, string> = {
   "MLS Future Forum": "/mls.png",
   "LinkedIn": "/linkedin.svg",
-  "Dev.to": "/dev.png"
+  "Dev.to": "/dev.png",
+  "BBC": "./bbc.png"
 }
 
 export default function Blog() {
@@ -21,7 +22,7 @@ export default function Blog() {
       isAudio: false
     },
     {
-      platform: "LinkedIn",
+      platform: "BBC",
       year: "2025",
       readTime: "9 min listen",
       title: "BBC Radio Interview: Diversity in AI",
