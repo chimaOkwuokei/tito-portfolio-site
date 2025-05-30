@@ -9,7 +9,7 @@ import igbLogo from '@/assets/igbinedion.png';
 
 export default function AboutSection() {
   const skills = [
-    "Python", "LnagChain", "LangGraph", "HuggingFace", "MySQL", "PostgreSQL", "MongoDB", "Terraform", "Ansible", "Docker", "Git",
+    "Python", "LangChain", "LangGraph", "HuggingFace", "MySQL", "PostgreSQL", "MongoDB", "Terraform", "Ansible", "Docker", "Git",
     "DVC", "MLflow", "Databricks", "Scikit - Learn", "PyTorch", "Tensorflow", "OpenCV", "Apache Spark", "Hadoop", "Databricks",
     "Flask", "FastAPI", "AWS"
   ]
